@@ -8,10 +8,10 @@ const InputView = class extends InterfaceView {
   readLine(query, callback) {
     Console.readLine(query, callback);
   }
+
   /**
    * 다리의 길이를 입력받는다.
    */
-
   readBridgeSize(query, callback) {
     throw new Error(ERROR.INTERFACE.METHOD);
   }
