@@ -57,16 +57,9 @@ const expectBridgeOrder = (received, upside, downside) => {
   expect(upsideIndex).toBeLessThan(downsideIndex);
 };
 
-<<<<<<< HEAD
 describe('다리 건너기 테스트', () => {
   test('다리 생성 테스트', () => {
     const randomNumbers = [1, 0, 0];
-    // eslint-disable-next-line arrow-body-style
-=======
-describe("다리 건너기 테스트", () => {
-  test("다리 생성 테스트", () => {
-    const randomNumbers = [1, 0, 0];
->>>>>>> 3775ccff16a44d271a4c3816f22d56401311464f
     const mockGenerator = randomNumbers.reduce((acc, number) => {
       return acc.mockReturnValueOnce(number);
     }, jest.fn());
@@ -78,11 +71,7 @@ describe("다리 건너기 테스트", () => {
   test('기능 테스트', () => {
     const logSpy = getLogSpy();
     mockRandoms([1, 0, 1]);
-<<<<<<< HEAD
     mockQuestions(['3', 'U', 'D', 'U']);
-=======
-    mockQuestions(["3", "U", "D", "U"]);
->>>>>>> 3775ccff16a44d271a4c3816f22d56401311464f
 
     const app = new App();
     app.play();
